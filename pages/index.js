@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Head from 'next/head'
 
 export default function Home() {
@@ -11,7 +13,14 @@ export default function Home() {
       <main>
         <h1 className="title">
           Vingummiguiden
+
         </h1>
+        <h2 className="title">
+        Read{' '}
+        <Link href="/posts/first-post">
+          <a>this post!</a>
+        </Link>
+        </h2>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
