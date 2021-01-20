@@ -6,11 +6,12 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Vingummiguiden</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <img src='/images/vingummin-lg.jpg' width='500px' alt="Vingummi" />
         <h1 className="title">
           Vingummiguiden
 
