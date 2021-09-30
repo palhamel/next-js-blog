@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Vingummiguiden'
 export const siteTitle = 'Magisk bra info om vingummin'
 
-export default function Layout({ children, home }) {
+export default function Layout ({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src='/images/profile.jpg'
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -36,17 +36,17 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
+            <Link href='/'>
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src='/images/profile.jpg'
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
+              <Link href='/'>
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
@@ -56,7 +56,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
+          <Link href='/'>
             <a>← Back to home</a>
           </Link>
         </div>
